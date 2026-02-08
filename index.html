@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FDert - Free Resource Hub</title>
+    <meta name="description"
+        content="A comprehensive collection of free tools, software, and resources organized by category.">
+
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="FDert - Free Resource Hub">
+    <meta property="og:description" content="Your ultimate resource hub for privacy, freedom, and tools.">
+    <meta property="og:image" content="/og-image.png">
+    <meta name="twitter:card" content="summary_large_image">
+
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+
+    <link rel="stylesheet" href="modern.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+
+    <aside class="sidebar">
+        <div class="logo">
+            <i class="fa-solid fa-layer-group"></i>
+            FDert
+        </div>
+        <div class="nav-scroll">
+        </div>
+    </aside>
+
+    <div class="main">
+        <header class="header">
+            <div class="search-container">
+                <i class="fa-solid fa-magnifying-glass search-icon"></i>
+                <input type="text" class="search-input" placeholder="Search resources...">
+                <div class="kbd-shortcut">Ctrl K</div>
+            </div>
+            <div class="header-actions">
+                <div class="icon-btn theme-toggle"><i class="fa-solid fa-sun"></i></div>
+                <a href="https://github.com/" class="icon-btn" target="_blank" rel="noopener" title="GitHub"><i
+                        class="fa-brands fa-github"></i></a>
+                <a href="https://discord.gg/" class="icon-btn" target="_blank" rel="noopener" title="Discord"><i
+                        class="fa-brands fa-discord"></i></a>
+            </div>
+        </header>
+
+        <div class="content-scroll">
+            <div class="content-container">
+                <p style="color: var(--text-muted);">Loading content...</p>
+            </div>
+
+            <nav class="toc-sidebar">
+            </nav>
+        </div>
+    </div>
+    <div id="feedback-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h2>Send Feedback</h2>
+            <p>Help us improve FDert. Tell us about broken links, new suggestions, or general feedback.</p>
+            <form id="feedback-form">
+                <input type="hidden" id="feedback-category" name="category" value="general">
+                <textarea id="feedback-message" name="message" placeholder="Type your feedback here..."
+                    required></textarea>
+                <button type="button" class="btn-cancel">Cancel</button>
+                <button type="submit" class="btn-submit">Send Feedback</button>
+            </form>
+            <div id="feedback-status"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

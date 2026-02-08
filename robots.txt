@@ -1,0 +1,5 @@
+# robots.txt for FDert
+User-agent: *
+Allow: /
+
+Sitemap: https://fdert.vercel.app/sitemap.xml

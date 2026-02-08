@@ -1,0 +1,2524 @@
+{
+    "categories": {
+        "home": {
+            "title": "Welcome to FDert",
+            "subtitle": "Your Ultimate Resource Hub for Privacy, Freedom, and Tools.",
+            "icon": "fa-house",
+            "sections": [
+                {
+                    "id": "intro",
+                    "title": "Getting Started",
+                    "links": [
+                        {
+                            "text": "Beginners Guide",
+                            "url": "https://rentry.org/piracy",
+                            "desc": "Start here if you are new"
+                        },
+                        {
+                            "text": "Piracy Glossary",
+                            "url": "https://rentry.org/The-Piracy-Glossary",
+                            "desc": "Understand the terminology"
+                        },
+                        {
+                            "text": "FDert GitHub",
+                            "url": "https://github.com/",
+                            "desc": "Check out our source"
+                        }
+                    ]
+                },
+                {
+                    "id": "featured",
+                    "title": "Featured Resources",
+                    "links": [
+                        {
+                            "star": true,
+                            "text": "uBlock Origin",
+                            "url": "https://github.com/gorhill/uBlock",
+                            "desc": "The gold standard for adblocking"
+                        },
+                        {
+                            "star": true,
+                            "text": "Privacy Guides",
+                            "url": "https://privacyguides.org",
+                            "desc": "Essential privacy knowledge"
+                        },
+                        {
+                            "text": "SearXNG",
+                            "url": "https://searx.space/",
+                            "desc": "Privacy-respecting search engine"
+                        }
+                    ]
+                }
+            ]
+        },
+        "posts": {
+            "title": "Latest Posts & Guides",
+            "subtitle": "Updates, news, and deep-dive articles.",
+            "icon": "fa-newspaper",
+            "sections": [
+                {
+                    "id": "guides",
+                    "title": "General Guides",
+                    "links": [
+                        {
+                            "text": "The Piracy Wiki",
+                            "url": "https://reddit.com/r/piracy/wiki"
+                        },
+                        {
+                            "text": "Awesome Selfhosted",
+                            "url": "https://github.com/awesome-selfhosted/awesome-selfhosted"
+                        },
+                        {
+                            "text": "Privacy Settings Guide",
+                            "url": "https://github.com/StellarSand/privacy-settings"
+                        }
+                    ]
+                }
+            ]
+        },
+        "contribute": {
+            "title": "Contribute to FDert",
+            "subtitle": "Help us keep the hub alive and updated.",
+            "icon": "fa-code-branch",
+            "sections": [
+                {
+                    "id": "how-to",
+                    "title": "Ways to Help",
+                    "links": [
+                        {
+                            "text": "Submit Feedback",
+                            "url": "#",
+                            "desc": "Tell us what's broken"
+                        },
+                        {
+                            "text": "Add New Resources",
+                            "url": "https://github.com/",
+                            "desc": "Submit a PR on GitHub"
+                        },
+                        {
+                            "text": "Join our Discord",
+                            "url": "https://discord.gg/",
+                            "desc": "Connect with the community"
+                        }
+                    ]
+                }
+            ]
+        },
+        "adblocking": {
+            "title": "Adblocking / Privacy",
+            "subtitle": "Adblocking, Privacy, VPNs, Proxies, Antiviruses",
+            "icon": "fa-shield-halved",
+            "sections": [
+                {
+                    "id": "adblocking",
+                    "title": "Adblocking",
+                    "tip": {
+                        "text": "Many sites contain ads, popups or redirects, so we highly recommend using an adblocker. Don't run multiple general adblockers simultaneously to avoid breakage."
+                    },
+                    "links": [
+                        {
+                            "star": true,
+                            "text": "uBlock Origin",
+                            "url": "https://github.com/gorhill/uBlock",
+                            "desc": "Best general adblocker"
+                        },
+                        {
+                            "star": true,
+                            "text": "uBO Lite",
+                            "url": "https://github.com/uBlockOrigin/uBOL-home",
+                            "desc": "Manifest V3 version"
+                        },
+                        {
+                            "star": true,
+                            "text": "AdGuard",
+                            "url": "https://github.com/AdguardTeam/AdguardBrowserExtension"
+                        },
+                        {
+                            "text": "SponsorBlock",
+                            "url": "https://sponsor.ajay.app/",
+                            "desc": "Skip YouTube sponsors"
+                        },
+                        {
+                            "text": "Spotify Adblock",
+                            "url": "https://spotsponsorblock.org/",
+                            "desc": "Block Spotify ads"
+                        },
+                        {
+                            "text": "PopupBlocker",
+                            "url": "https://github.com/schomery/popup-blocker",
+                            "desc": "Block popups strictly"
+                        },
+                        {
+                            "text": "BehindTheOverlay",
+                            "url": "https://github.com/NicolaeNMV/BehindTheOverlay",
+                            "desc": "Hide website overlays"
+                        },
+                        {
+                            "text": "PopupBlockerAll",
+                            "url": "https://addons.mozilla.org/en-US/firefox/addon/popupblockerall/"
+                        }
+                    ]
+                },
+                {
+                    "id": "dns",
+                    "title": "DNS Adblocking",
+                    "links": [
+                        {
+                            "star": true,
+                            "text": "NextDNS",
+                            "url": "https://nextdns.io/",
+                            "desc": "Cloud-based customizable DNS"
+                        },
+                        {
+                            "star": true,
+                            "text": "Pi-hole",
+                            "url": "https://pi-hole.net/",
+                            "desc": "Network-wide adblocking"
+                        },
+                        {
+                            "star": true,
+                            "text": "AdGuard Home",
+                            "url": "https://adguard.com/en/adguard-home/overview.html"
+                        },
+                        {
+                            "text": "Mullvad DNS",
+                            "url": "https://mullvad.net/en/help/dns-over-https-and-dns-over-tls/"
+                        },
+                        {
+                            "text": "ControlD",
+                            "url": "https://controld.com/free-dns"
+                        },
+                        {
+                            "text": "Technitium DNS",
+                            "url": "https://technitium.com/dns"
+                        },
+                        {
+                            "text": "RethinkDNS",
+                            "url": "https://rethinkdns.com/configure"
+                        },
+                        {
+                            "text": "YogaDNS",
+                            "url": "https://yogadns.com/"
+                        }
+                    ]
+                },
+                {
+                    "id": "privacy-guides",
+                    "title": "Privacy Guides & OPSEC",
+                    "links": [
+                        {
+                            "star": true,
+                            "text": "Privacy Guides",
+                            "url": "https://privacyguides.org"
+                        },
+                        {
+                            "star": true,
+                            "text": "Surveillance Self-Defense",
+                            "url": "https://ssd.eff.org/"
+                        },
+                        {
+                            "text": "The New Oil",
+                            "url": "https://thenewoil.org/"
+                        },
+                        {
+                            "text": "Anonymous Planet",
+                            "url": "https://anonymousplanet.org/"
+                        },
+                        {
+                            "text": "Awesome Privacy",
+                            "url": "https://awesome-privacy.xyz/"
+                        },
+                        {
+                            "text": "PrivSec.dev",
+                            "url": "https://privsec.dev/"
+                        },
+                        {
+                            "text": "AvoidTheHack",
+                            "url": "https://avoidthehack.com/"
+                        },
+                        {
+                            "text": "Defensive Computing Checklist",
+                            "url": "https://defensivecomputingchecklist.com/"
+                        }
+                    ]
+                },
+                {
+                    "id": "messengers",
+                    "title": "Encrypted Messengers",
+                    "links": [
+                        {
+                            "star": true,
+                            "text": "Signal",
+                            "url": "https://signal.org/"
+                        },
+                        {
+                            "star": true,
+                            "text": "SimpleX Chat",
+                            "url": "https://simplex.chat/"
+                        },
+                        {
+                            "star": true,
+                            "text": "Session",
+                            "url": "https://getsession.org/"
+                        },
+                        {
+                            "text": "Briar",
+                            "url": "https://briarproject.org/"
+                        },
+                        {
+                            "text": "Matrix / Element",
+                            "url": "https://matrix.org/"
+                        },
+                        {
+                            "text": "Tox / qTox",
+                            "url": "https://tox.chat/"
+                        },
+                        {
+                            "text": "KeepassXC",
+                            "url": "https://keepassxc.org/",
+                            "desc": "Offline password manager"
+                        }
+                    ]
+                },
+                {
+                    "id": "email",
+                    "title": "Email Privacy",
+                    "links": [
+                        {
+                            "star": true,
+                            "text": "Proton Mail",
+                            "url": "https://proton.me/mail"
+                        },
+                        {
+                            "star": true,
+                            "text": "Tuta",
+                            "url": "https://tuta.com/"
+                        },
+                        {
+                            "text": "Disroot",
+                            "url": "https://disroot.org/en/services/email"
+                        },
+                        {
+                            "text": "Mailvelope",
+                            "url": "https://mailvelope.com/",
+                            "desc": "PGP for webmail"
+                        },
+                        {
+                            "text": "SimpleLogin",
+                            "url": "https://simplelogin.io/",
+                            "desc": "Email aliasing"
+                        }
+                    ]
+                }
+            ]
+        },
+        "ai": {
+            "title": "Artificial Intelligence",
+            "subtitle": "Chatbots, Coding, Image, Video, Voice & Tools",
+            "icon": "fa-robot",
+            "sections": [
+                {
+                    "id": "official-chatbots",
+                    "title": "Official Chatbots",
+                    "links": [
+                        {
+                            "star": true,
+                            "text": "AI Studio",
+                            "url": "https://aistudio.google.com/",
+                            "desc": "Gemini 3 Pro Preview / 11 Daily"
+                        },
+                        {
+                            "star": true,
+                            "text": "ChatGPT",
+                            "url": "https://chatgpt.com/",
+                            "desc": "GPT-5.2 Instant"
+                        },
+                        {
+                            "star": true,
+                            "text": "Claude",
+                            "url": "https://claude.ai/",
+                            "desc": "Claude 4.5 Sonnet / Usage Tracker"
+                        },
+                        {
+                            "text": "Grok",
+                            "url": "https://grok.com/",
+                            "desc": "Grok 4 Fast (96 daily) / Grok 4.1 (24 daily)"
+                        },
+                        {
+                            "text": "Gemini",
+                            "url": "https://gemini.google.com/",
+                            "desc": "Gemini 3 Pro (5/day) / Flash (Unlimited)"
+                        },
+                        {
+                            "text": "DeepSeek",
+                            "url": "https://chat.deepseek.com/",
+                            "desc": "DeepSeek-V3.2 / Unlimited"
+                        },
+                        {
+                            "text": "Kimi AI",
+                            "url": "https://www.kimi.com/",
+                            "desc": "Kimi-K2.5 (Thinking) / Slides"
+                        },
+                        {
+                            "text": "Microsoft Copilot",
+                            "url": "https://copilot.microsoft.com/",
+                            "desc": "GPT-5.1 / Unlimited"
+                        },
+                        {
+                            "text": "Qwen",
+                            "url": "https://chat.qwen.ai/",
+                            "desc": "Qwen3-Max / Unlimited"
+                        },
+                        {
+                            "text": "Mistral AI",
+                            "url": "https://chat.mistral.ai/",
+                            "desc": "Mistral Large 3"
+                        }
+                    ]
+                },
+                {
+                    "id": "aggregators",
+                    "title": "Multi-Model Aggregators",
+                    "links": [
+                        {
+                            "star": true,
+                            "text": "LMSYS Arena",
+                            "url": "https://arena.ai/?mode=direct",
+                            "desc": "Multiple Models / No Sign-Up"
+                        },
+                        {
+                            "star": true,
+                            "text": "Groq Cloud",
+                            "url": "https://console.groq.com/playground",
+                            "desc": "Kimi K2-0905 / GPT-OSS 120B / Fast"
+                        },
+                        {
+                            "text": "DuckDuckGo AI",
+                            "url": "https://duck.ai/chat",
+                            "desc": "GPT-4o mini / GPT-5 mini / No Sign-Up"
+                        },
+                        {
+                            "text": "Poe",
+                            "url": "https://poe.com",
+                            "desc": "Multiple Models"
+                        },
+                        {
+                            "text": "OpenRouter",
+                            "url": "https://openrouter.ai/"
+                        },
+                        {
+                            "text": "Yupp.ai",
+                            "url": "https://yupp.ai",
+                            "desc": "Multiple Models / Google Login"
+                        },
+                        {
+                            "text": "Pollinations",
+                            "url": "https://chat.pollinations.ai/",
+                            "desc": "GPT-5.2 / Gemini 3 Pro / No Sign-Up"
+                        },
+                        {
+                            "text": "Khoj",
+                            "url": "https://app.khoj.dev/",
+                            "desc": "Gemini 3 Flash / DeepSeek V3.2 / Grok 4.1"
+                        },
+                        {
+                            "text": "Coze",
+                            "url": "https://www.coze.com/",
+                            "desc": "GPT-4 Turbo 128k / Gemini 1.5 Pro"
+                        }
+                    ]
+                },
+                {
+                    "id": "search-research",
+                    "title": "Search & Research",
+                    "links": [
+                        {
+                            "star": true,
+                            "text": "Perplexity",
+                            "url": "https://www.perplexity.ai/",
+                            "desc": "AI Search Engine"
+                        },
+                        {
+                            "star": true,
+                            "text": "NotebookLM",
+                            "url": "https://notebooklm.google/",
+                            "desc": "Document Chatbot / Note-Taking"
+                        },
+                        {
+                            "text": "Phind",
+                            "url": "https://phind.com/",
+                            "desc": "AI for developers"
+                        },
+                        {
+                            "text": "SciSpace",
+                            "url": "https://scispace.com/",
+                            "desc": "Research Chatbot"
+                        },
+                        {
+                            "text": "Elicit",
+                            "url": "https://elicit.com/",
+                            "desc": "Research Chatbot"
+                        },
+                        {
+                            "text": "Learn About",
+                            "url": "https://learning.google.com/experiments/learn-about",
+                            "desc": "Google's Educational Search AI"
+                        },
+                        {
+                            "text": "PrivateGPT",
+                            "url": "https://privategpt.dev/",
+                            "desc": "Document Chatbot"
+                        }
+                    ]
+                },
+                {
+                    "id": "local-open",
+                    "title": "Local & Open Source",
+                    "links": [
+                        {
+                            "star": true,
+                            "text": "Ollama",
+                            "url": "https://ollama.com/",
+                            "desc": "Run LLMs locally easily"
+                        },
+                        {
+                            "star": true,
+                            "text": "LM Studio",
+                            "url": "https://lmstudio.ai/",
+                            "desc": "GUI for local LLMs"
+                        },
+                        {
+                            "text": "Jan",
+                            "url": "https://jan.ai/",
+                            "desc": "Self-Hosted / Offline"
+                        },
+                        {
+                            "text": "Open WebUI",
+                            "url": "https://openwebui.com/",
+                            "desc": "Self-Hosted Interface"
+                        },
+                        {
+                            "text": "SillyTavern",
+                            "url": "https://docs.sillytavern.app/",
+                            "desc": "Self-Hosted Interface"
+                        },
+                        {
+                            "text": "GPT4Free",
+                            "url": "https://github.com/xtekky/gpt4free",
+                            "desc": "Desktop App / Demo"
+                        },
+                        {
+                            "text": "KoboldCpp",
+                            "url": "https://github.com/LostRuins/koboldcpp",
+                            "desc": "llama.cpp with API + GUI"
+                        }
+                    ]
+                },
+                {
+                    "id": "roleplaying",
+                    "title": "Roleplaying",
+                    "links": [
+                        {
+                            "star": true,
+                            "text": "Perchance",
+                            "url": "https://perchance.org/ai-character-chat",
+                            "desc": "Roleplaying / No Sign-Up / Unlimited"
+                        },
+                        {
+                            "text": "PygmalionAI",
+                            "url": "https://pygmalion.chat/",
+                            "desc": "Self-Hosted Roleplaying Models"
+                        },
+                        {
+                            "text": "FlowGPT",
+                            "url": "https://flowgpt.com/",
+                            "desc": "Roleplaying Chatbots"
+                        },
+                        {
+                            "text": "Chub.ai",
+                            "url": "https://chub.ai/",
+                            "desc": "Character Cards"
+                        },
+                        {
+                            "text": "KoboldAI Lite",
+                            "url": "https://lite.koboldai.net/",
+                            "desc": "Roleplaying / No Sign-Up / Unlimited"
+                        },
+                        {
+                            "text": "AI Dungeon",
+                            "url": "https://aidungeon.com/",
+                            "desc": "Roleplaying / Story Chatbot"
+                        }
+                    ]
+                },
+                {
+                    "id": "coding",
+                    "title": "Coding Assistants",
+                    "tip": {
+                        "text": "Many coding AIs run in root, so avoid giving them full drive access. Backup code before running AI commands."
+                    },
+                    "links": [
+                        {
+                            "star": true,
+                            "text": "Cursor",
+                            "url": "https://cursor.com/",
+                            "desc": "The AI code editor"
+                        },
+                        {
+                            "star": true,
+                            "text": "Cline",
+                            "url": "https://cline.bot/",
+                            "desc": "Autonomous agent for VS Code"
+                        },
+                        {
+                            "text": "Roo Code",
+                            "url": "https://roocode.com/"
+                        },
+                        {
+                            "text": "Windsurf",
+                            "url": "https://www.windsurf.com/"
+                        },
+                        {
+                            "text": "Aider",
+                            "url": "https://aider.chat/",
+                            "desc": "Terminal Coding AI"
+                        },
+                        {
+                            "text": "OpenHands",
+                            "url": "https://github.com/All-Hands-AI/OpenHands"
+                        },
+                        {
+                            "text": "Google Antigravity",
+                            "url": "#",
+                            "desc": "Gemini 3 / Opus 4.5 / Usage Tracker"
+                        },
+                        {
+                            "text": "Devv",
+                            "url": "https://devv.ai/",
+                            "desc": "Coding Search Engine"
+                        }
+                    ]
+                },
+                {
+                    "id": "image-gen",
+                    "title": "Image Generation",
+                    "links": [
+                        {
+                            "star": true,
+                            "text": "Bing Create",
+                            "url": "https://www.bing.com/images/create",
+                            "desc": "Unlimited / GPT-4o / DALL-E-3"
+                        },
+                        {
+                            "star": true,
+                            "text": "Arena Image",
+                            "url": "https://arena.ai/?mode=direct&chat-modality=image",
+                            "desc": "GPT Image 1.5 / Nano Banana Pro"
+                        },
+                        {
+                            "text": "Midjourney",
+                            "url": "https://midjourney.com/"
+                        },
+                        {
+                            "text": "Recraft",
+                            "url": "https://www.recraft.ai/",
+                            "desc": "30 Daily / Requires Sign-Up"
+                        },
+                        {
+                            "text": "Civitai",
+                            "url": "https://civitai.com/",
+                            "desc": "SD Model Index"
+                        },
+                        {
+                            "text": "Dreamina",
+                            "url": "https://dreamina.capcut.com/",
+                            "desc": "120 Credits Daily / Nano Banana"
+                        },
+                        {
+                            "text": "Flux Schnell",
+                            "url": "https://huggingface.co/black-forest-labs/FLUX.1-schnell",
+                            "desc": "Via various hosts"
+                        }
+                    ]
+                },
+                {
+                    "id": "video-gen",
+                    "title": "Video Generation",
+                    "tip": {
+                        "text": "Most services require signup and generate short videos only."
+                    },
+                    "links": [
+                        {
+                            "star": true,
+                            "text": "Sora",
+                            "url": "https://openai.com/index/sora/",
+                            "desc": "6 Daily / Remove Watermarks"
+                        },
+                        {
+                            "star": true,
+                            "text": "Luma Dream Machine",
+                            "url": "https://lumalabs.ai/dream-machine"
+                        },
+                        {
+                            "text": "Wan Video",
+                            "url": "https://wan.video/",
+                            "desc": "Wan 2.6 / Image to Video"
+                        },
+                        {
+                            "text": "Grok Imagine",
+                            "url": "https://grok.com/",
+                            "desc": "Traffic-Based / Imagine 0.9"
+                        },
+                        {
+                            "text": "Kling AI",
+                            "url": "https://klingai.com/"
+                        },
+                        {
+                            "text": "Runway",
+                            "url": "https://runwayml.com/"
+                        }
+                    ]
+                },
+                {
+                    "id": "audio-voice",
+                    "title": "Audio & Voice",
+                    "links": [
+                        {
+                            "star": true,
+                            "text": "Suno",
+                            "url": "https://suno.com/",
+                            "desc": "10 Daily / AI Music"
+                        },
+                        {
+                            "star": true,
+                            "text": "ElevenLabs",
+                            "url": "https://elevenlabs.io/",
+                            "desc": "TTS / Voice Cloning"
+                        },
+                        {
+                            "text": "Udio",
+                            "url": "https://udio.com/",
+                            "desc": "Music Generation"
+                        },
+                        {
+                            "text": "Kokoro TTS",
+                            "url": "https://huggingface.co/spaces/hexgrad/Kokoro-TTS",
+                            "desc": "No Sign-Up"
+                        },
+                        {
+                            "text": "Applio",
+                            "url": "https://applio.org/",
+                            "desc": "Voice Cloning"
+                        },
+                        {
+                            "text": "RVC V2",
+                            "url": "#",
+                            "desc": "Voice Cloning (Locally)"
+                        },
+                        {
+                            "text": "VocalRemover",
+                            "url": "https://vocalremover.org/",
+                            "desc": "Voice Separation"
+                        }
+                    ]
+                },
+                {
+                    "id": "tools-prompts",
+                    "title": "Tools & Prompts",
+                    "tip": {
+                        "text": "Bypassing chatbot safeguards (jailbreaking) is against TOS, use at own risk."
+                    },
+                    "links": [
+                        {
+                            "text": "Jailbreak Prompts",
+                            "url": "https://github.com/elder-plinius/L1B3RT4S",
+                            "desc": "L1B3RT4S"
+                        },
+                        {
+                            "text": "Prompt Engineering Guide",
+                            "url": "https://www.promptingguide.ai/"
+                        },
+                        {
+                            "text": "Promptfoo",
+                            "url": "https://www.promptfoo.dev/",
+                            "desc": "Prompt Playgrounds"
+                        },
+                        {
+                            "text": "PricePerToken",
+                            "url": "https://pricepertoken.com/",
+                            "desc": "AI Price Comparisons"
+                        },
+                        {
+                            "text": "LLM Explorer",
+                            "url": "https://llm-explorer.com/",
+                            "desc": "LLM Database"
+                        }
+                    ]
+                },
+                {
+                    "id": "machine-learning",
+                    "title": "Machine Learning",
+                    "links": [
+                        {
+                            "star": true,
+                            "text": "Hugging Face",
+                            "url": "https://huggingface.co/"
+                        },
+                        {
+                            "text": "Papers with Code",
+                            "url": "https://paperswithcode.com/"
+                        },
+                        {
+                            "text": "DeepLearning.ai",
+                            "url": "https://www.deeplearning.ai/"
+                        },
+                        {
+                            "text": "Fast.ai",
+                            "url": "https://course.fast.ai/"
+                        },
+                        {
+                            "text": "Unsloth",
+                            "url": "https://github.com/unslothai/unsloth",
+                            "desc": "LLM Finetuning"
+                        }
+                    ]
+                }
+            ]
+        },
+        "movies": {
+            "title": "Movies / TV / Anime",
+            "subtitle": "Streaming, Downloads, Trackers, Subtitles",
+            "icon": "fa-film",
+            "sections": [
+                {
+                    "id": "streaming",
+                    "title": "Streaming Sites",
+                    "tip": {
+                        "text": "Use an adblocker! These sites have aggressive ads."
+                    },
+                    "links": [
+                        {
+                            "star": true,
+                            "text": "movie-web.app",
+                            "url": "https://movie-web.app/"
+                        },
+                        {
+                            "star": true,
+                            "text": "Braflix",
+                            "url": "https://braflix.is/"
+                        },
+                        {
+                            "text": "FMovies",
+                            "url": "https://fmovies.to/"
+                        },
+                        {
+                            "text": "123Movies",
+                            "url": "https://123movies.to/"
+                        },
+                        {
+                            "text": "Soap2Day",
+                            "url": "https://soap2day.ac/"
+                        },
+                        {
+                            "text": "HDToday",
+                            "url": "https://hdtoday.tv/"
+                        },
+                        {
+                            "text": "FlixHQ",
+                            "url": "https://flixhq.to/"
+                        }
+                    ]
+                },
+                {
+                    "id": "anime",
+                    "title": "Anime",
+                    "links": [
+                        {
+                            "star": true,
+                            "text": "AniWatch",
+                            "url": "https://aniwatch.to/"
+                        },
+                        {
+                            "star": true,
+                            "text": "Animixplay",
+                            "url": "https://animixplay.to/"
+                        },
+                        {
+                            "text": "9anime",
+                            "url": "https://9anime.to/"
+                        },
+                        {
+                            "text": "Gogoanime",
+                            "url": "https://gogoanime.co/"
+                        },
+                        {
+                            "text": "Nyaa.si",
+                            "url": "https://nyaa.si/",
+                            "desc": "Anime torrents"
+                        },
+                        {
+                            "text": "AniList",
+                            "url": "https://anilist.co",
+                            "desc": "Tracking"
+                        }
+                    ]
+                },
+                {
+                    "id": "media-tools",
+                    "title": "Media Tools",
+                    "links": [
+                        {
+                            "star": true,
+                            "text": "Stremio",
+                            "url": "https://stremio.com",
+                            "desc": "With Torrentio addon"
+                        },
+                        {
+                            "text": "Plex",
+                            "url": "https://plex.tv"
+                        },
+                        {
+                            "text": "Jellyfin",
+                            "url": "https://jellyfin.org",
+                            "desc": "Open source"
+                        },
+                        {
+                            "text": "Radarr",
+                            "url": "https://radarr.video/",
+                            "desc": "Movie automation"
+                        },
+                        {
+                            "text": "Sonarr",
+                            "url": "https://sonarr.tv/",
+                            "desc": "TV automation"
+                        },
+                        {
+                            "text": "OpenSubtitles",
+                            "url": "https://opensubtitles.org"
+                        }
+                    ]
+                }
+            ]
+        },
+        "music": {
+            "title": "Music / Podcasts / Radio",
+            "subtitle": "Streaming, Downloads, Production",
+            "icon": "fa-music",
+            "sections": [
+                {
+                    "id": "music-streaming",
+                    "title": "Music Streaming",
+                    "links": [
+                        {
+                            "text": "Spotify",
+                            "url": "https://spotify.com"
+                        },
+                        {
+                            "text": "YouTube Music",
+                            "url": "https://music.youtube.com"
+                        },
+                        {
+                            "text": "SoundCloud",
+                            "url": "https://soundcloud.com"
+                        },
+                        {
+                            "text": "Tidal",
+                            "url": "https://tidal.com"
+                        },
+                        {
+                            "text": "Deezer",
+                            "url": "https://deezer.com"
+                        }
+                    ]
+                },
+                {
+                    "id": "music-download",
+                    "title": "Music Downloads",
+                    "links": [
+                        {
+                            "star": true,
+                            "text": "Soulseek",
+                            "url": "http://www.slsknet.org/news/",
+                            "desc": "P2P music sharing"
+                        },
+                        {
+                            "star": true,
+                            "text": "Deemix",
+                            "url": "https://deemix.app/",
+                            "desc": "Deezer downloader"
+                        },
+                        {
+                            "text": "SpotDL",
+                            "url": "https://github.com/spotDL/spotify-downloader",
+                            "desc": "Spotify downloader"
+                        },
+                        {
+                            "text": "yt-dlp",
+                            "url": "https://github.com/yt-dlp/yt-dlp",
+                            "desc": "YouTube audio"
+                        },
+                        {
+                            "text": "Slavart",
+                            "url": "https://slavart.gamesdrive.net/"
+                        },
+                        {
+                            "text": "Rutracker",
+                            "url": "https://rutracker.org/forum/index.php",
+                            "desc": "FLAC torrents"
+                        }
+                    ]
+                },
+                {
+                    "id": "podcasts",
+                    "title": "Podcasts",
+                    "links": [
+                        {
+                            "text": "Pocket Casts",
+                            "url": "https://pocketcasts.com/"
+                        },
+                        {
+                            "text": "AntennaPod",
+                            "url": "https://antennapod.org/",
+                            "desc": "Open source"
+                        },
+                        {
+                            "text": "Podcast Addict",
+                            "url": "https://podcastaddict.com/"
+                        }
+                    ]
+                }
+            ]
+        },
+        "gaming": {
+            "title": "Gaming / Emulation",
+            "subtitle": "Free Games, ROMs, Emulators, Mods",
+            "icon": "fa-gamepad",
+            "sections": [
+                {
+                    "id": "free-games",
+                    "title": "Free Games",
+                    "links": [
+                        {
+                            "star": true,
+                            "text": "Epic Games Free",
+                            "url": "https://store.epicgames.com/free-games"
+                        },
+                        {
+                            "text": "Steam Free Games",
+                            "url": "https://store.steampowered.com/genre/Free%20to%20Play/"
+                        },
+                        {
+                            "text": "GOG Free",
+                            "url": "https://www.gog.com/partner/free_games"
+                        },
+                        {
+                            "text": "itch.io",
+                            "url": "https://itch.io"
+                        },
+                        {
+                            "text": "r/FreeGameFindings",
+                            "url": "https://reddit.com/r/FreeGameFindings"
+                        }
+                    ]
+                },
+                {
+                    "id": "piracy",
+                    "title": "Game Downloads",
+                    "tip": {
+                        "text": "Always verify downloads against trusted megathreads in r/PiratedGames to avoid malware."
+                    },
+                    "links": [
+                        {
+                            "star": true,
+                            "text": "FitGirl Repacks",
+                            "url": "https://fitgirl-repacks.site/"
+                        },
+                        {
+                            "star": true,
+                            "text": "DODI Repacks",
+                            "url": "https://dodi-repacks.site/"
+                        },
+                        {
+                            "text": "GOG Games",
+                            "url": "https://gog-games.to/",
+                            "desc": "DRM-free"
+                        },
+                        {
+                            "text": "SteamRIP",
+                            "url": "https://steamrip.com/"
+                        },
+                        {
+                            "text": "CS.RIN.RU",
+                            "url": "https://cs.rin.ru/",
+                            "desc": "Scene releases forum"
+                        }
+                    ]
+                },
+                {
+                    "id": "emulation",
+                    "title": "Emulation",
+                    "links": [
+                        {
+                            "star": true,
+                            "text": "Emulation Wiki",
+                            "url": "https://emulation.gametechwiki.com"
+                        },
+                        {
+                            "text": "RetroArch",
+                            "url": "https://retroarch.com"
+                        },
+                        {
+                            "text": "Dolphin",
+                            "url": "https://dolphin-emu.org/",
+                            "desc": "GameCube/Wii"
+                        },
+                        {
+                            "text": "PCSX2",
+                            "url": "https://pcsx2.net/",
+                            "desc": "PS2"
+                        },
+                        {
+                            "text": "RPCS3",
+                            "url": "https://rpcs3.net/",
+                            "desc": "PS3"
+                        },
+                        {
+                            "text": "Yuzu/Ryujinx",
+                            "url": "https://ryujinx.org/",
+                            "desc": "Switch"
+                        },
+                        {
+                            "text": "Vimm's Lair",
+                            "url": "https://vimm.net/",
+                            "desc": "ROM downloads"
+                        },
+                        {
+                            "text": "r/Roms Megathread",
+                            "url": "https://r-roms.github.io/"
+                        }
+                    ]
+                }
+            ]
+        },
+        "reading": {
+            "title": "Books / Comics / Manga",
+            "subtitle": "eBooks, Audiobooks, Comics, Manga, Academic",
+            "icon": "fa-book-open",
+            "sections": [
+                {
+                    "id": "ebooks",
+                    "title": "eBooks",
+                    "links": [
+                        {
+                            "star": true,
+                            "text": "Anna's Archive",
+                            "url": "https://annas-archive.org"
+                        },
+                        {
+                            "star": true,
+                            "text": "Library Genesis",
+                            "url": "https://libgen.is/"
+                        },
+                        {
+                            "star": true,
+                            "text": "Z-Library",
+                            "url": "https://singlelogin.re/"
+                        },
+                        {
+                            "text": "Project Gutenberg",
+                            "url": "https://gutenberg.org",
+                            "desc": "Public domain"
+                        },
+                        {
+                            "text": "Standard Ebooks",
+                            "url": "https://standardebooks.org"
+                        },
+                        {
+                            "text": "Mobilism",
+                            "url": "https://mobilism.org/"
+                        }
+                    ]
+                },
+                {
+                    "id": "audiobooks",
+                    "title": "Audiobooks",
+                    "links": [
+                        {
+                            "star": true,
+                            "text": "AudiobookBay",
+                            "url": "https://audiobookbay.lu/"
+                        },
+                        {
+                            "text": "Tokybook",
+                            "url": "https://tokybook.com/"
+                        },
+                        {
+                            "text": "LibriVox",
+                            "url": "https://librivox.org",
+                            "desc": "Free public domain"
+                        }
+                    ]
+                },
+                {
+                    "id": "manga",
+                    "title": "Manga",
+                    "links": [
+                        {
+                            "star": true,
+                            "text": "MangaDex",
+                            "url": "https://mangadex.org"
+                        },
+                        {
+                            "text": "MangaSee",
+                            "url": "https://mangasee123.com/"
+                        },
+                        {
+                            "text": "ComicK",
+                            "url": "https://comick.io/"
+                        },
+                        {
+                            "text": "Tachiyomi",
+                            "url": "https://tachiyomi.org/",
+                            "desc": "Android app"
+                        }
+                    ]
+                },
+                {
+                    "id": "comics",
+                    "title": "Comics",
+                    "links": [
+                        {
+                            "text": "GetComics",
+                            "url": "https://getcomics.org/"
+                        },
+                        {
+                            "text": "ReadComicOnline",
+                            "url": "https://readcomiconline.li/"
+                        }
+                    ]
+                },
+                {
+                    "id": "academic",
+                    "title": "Academic / Research",
+                    "links": [
+                        {
+                            "star": true,
+                            "text": "Sci-Hub",
+                            "url": "https://sci-hub.se/",
+                            "desc": "Research papers"
+                        },
+                        {
+                            "text": "Library Genesis",
+                            "url": "https://libgen.is/",
+                            "desc": "Textbooks"
+                        },
+                        {
+                            "text": "Google Scholar",
+                            "url": "https://scholar.google.com"
+                        }
+                    ]
+                }
+            ]
+        },
+        "downloading": {
+            "title": "Downloading",
+            "subtitle": "Download Managers, DDL Sites, Hosters",
+            "icon": "fa-download",
+            "sections": [
+                {
+                    "id": "download-managers",
+                    "title": "Download Managers",
+                    "links": [
+                        {
+                            "star": true,
+                            "text": "JDownloader 2",
+                            "url": "https://jdownloader.org"
+                        },
+                        {
+                            "text": "Internet Download Manager",
+                            "url": "https://www.internetdownloadmanager.com/"
+                        },
+                        {
+                            "text": "Free Download Manager",
+                            "url": "https://www.freedownloadmanager.org/"
+                        },
+                        {
+                            "text": "Motrix",
+                            "url": "https://motrix.app/",
+                            "desc": "Open source"
+                        }
+                    ]
+                },
+                {
+                    "id": "ddl",
+                    "title": "Direct Download Sites",
+                    "links": [
+                        {
+                            "text": "FileCR",
+                            "url": "https://filecr.com/",
+                            "desc": "Software"
+                        },
+                        {
+                            "text": "1337x",
+                            "url": "https://1337x.to/"
+                        },
+                        {
+                            "text": "RARBG Archive",
+                            "url": "https://therarbg.com/"
+                        }
+                    ]
+                },
+                {
+                    "id": "debrid",
+                    "title": "Debrid Services",
+                    "links": [
+                        {
+                            "star": true,
+                            "text": "Real-Debrid",
+                            "url": "https://real-debrid.com"
+                        },
+                        {
+                            "text": "AllDebrid",
+                            "url": "https://alldebrid.com/"
+                        },
+                        {
+                            "text": "Premiumize",
+                            "url": "https://premiumize.me/"
+                        }
+                    ]
+                }
+            ]
+        },
+        "torrenting": {
+            "title": "Torrenting",
+            "subtitle": "Clients, Trackers, Guides",
+            "icon": "fa-magnet",
+            "sections": [
+                {
+                    "id": "clients",
+                    "title": "Torrent Clients",
+                    "links": [
+                        {
+                            "star": true,
+                            "text": "qBittorrent",
+                            "url": "https://qbittorrent.org"
+                        },
+                        {
+                            "text": "Transmission",
+                            "url": "https://transmissionbt.com/"
+                        },
+                        {
+                            "text": "Deluge",
+                            "url": "https://deluge-torrent.org/"
+                        },
+                        {
+                            "text": "LibreTorrent",
+                            "url": "https://gitlab.com/proninyaroslav/libretorrent",
+                            "desc": "Android"
+                        }
+                    ]
+                },
+                {
+                    "id": "public-trackers",
+                    "title": "Public Trackers",
+                    "links": [
+                        {
+                            "star": true,
+                            "text": "1337x",
+                            "url": "https://1337x.to/"
+                        },
+                        {
+                            "text": "RARBG",
+                            "url": "https://therarbg.com/",
+                            "desc": "Archive only"
+                        },
+                        {
+                            "text": "The Pirate Bay",
+                            "url": "https://thepiratebay.org/"
+                        },
+                        {
+                            "text": "Nyaa.si",
+                            "url": "https://nyaa.si/",
+                            "desc": "Anime"
+                        },
+                        {
+                            "text": "RuTracker",
+                            "url": "https://rutracker.org/"
+                        }
+                    ]
+                },
+                {
+                    "id": "private-trackers",
+                    "title": "Private Trackers",
+                    "links": [
+                        {
+                            "text": "Private Tracker Guide",
+                            "url": "https://www.reddit.com/r/trackers/wiki/index/"
+                        },
+                        {
+                            "text": "r/trackers",
+                            "url": "https://reddit.com/r/trackers"
+                        },
+                        {
+                            "text": "Interview Prep",
+                            "url": "https://interviewfor.red/"
+                        }
+                    ]
+                }
+            ]
+        },
+        "android": {
+            "title": "Android / iOS",
+            "subtitle": "APKs, Modded Apps, Sideloading, Jailbreaks",
+            "icon": "fa-mobile-screen",
+            "sections": [
+                {
+                    "id": "android-apps",
+                    "title": "Android Apps & APKs",
+                    "links": [
+                        {
+                            "star": true,
+                            "text": "F-Droid",
+                            "url": "https://f-droid.org",
+                            "desc": "Open source apps"
+                        },
+                        {
+                            "star": true,
+                            "text": "Aurora Store",
+                            "url": "https://auroraoss.com/",
+                            "desc": "Google Play alternative"
+                        },
+                        {
+                            "text": "APKMirror",
+                            "url": "https://apkmirror.com",
+                            "desc": "Safe APKs"
+                        },
+                        {
+                            "text": "ReVanced",
+                            "url": "https://revanced.app/",
+                            "desc": "YouTube mods"
+                        },
+                        {
+                            "text": "Lucky Patcher",
+                            "url": "https://luckypatchers.com/"
+                        },
+                        {
+                            "text": "Mobilism",
+                            "url": "https://mobilism.org/"
+                        }
+                    ]
+                },
+                {
+                    "id": "android-tools",
+                    "title": "Android Tools",
+                    "links": [
+                        {
+                            "text": "Termux",
+                            "url": "https://termux.dev/en/"
+                        },
+                        {
+                            "text": "Shizuku",
+                            "url": "https://shizuku.rikka.app/"
+                        },
+                        {
+                            "text": "Magisk",
+                            "url": "https://github.com/topjohnwu/Magisk",
+                            "desc": "Root"
+                        },
+                        {
+                            "text": "KernelSU",
+                            "url": "https://kernelsu.org/",
+                            "desc": "Root alternative"
+                        }
+                    ]
+                },
+                {
+                    "id": "ios",
+                    "title": "iOS",
+                    "links": [
+                        {
+                            "text": "AltStore",
+                            "url": "https://altstore.io/",
+                            "desc": "Sideload apps"
+                        },
+                        {
+                            "text": "Sideloadly",
+                            "url": "https://sideloadly.io/"
+                        },
+                        {
+                            "text": "uYou+",
+                            "url": "https://github.com/qnblackcat/uYouPlus",
+                            "desc": "YouTube mod"
+                        },
+                        {
+                            "text": "r/jailbreak",
+                            "url": "https://reddit.com/r/jailbreak"
+                        }
+                    ]
+                }
+            ]
+        },
+        "linux": {
+            "title": "Linux / macOS",
+            "subtitle": "Distros, Software, Gaming, Customization",
+            "icon": "fa-terminal",
+            "sections": [
+                {
+                    "id": "distros",
+                    "title": "Linux Distros",
+                    "links": [
+                        {
+                            "star": true,
+                            "text": "Arch Linux",
+                            "url": "https://archlinux.org"
+                        },
+                        {
+                            "text": "Fedora",
+                            "url": "https://fedoraproject.org"
+                        },
+                        {
+                            "text": "Linux Mint",
+                            "url": "https://linuxmint.com"
+                        },
+                        {
+                            "text": "Ubuntu",
+                            "url": "https://ubuntu.com"
+                        },
+                        {
+                            "text": "Pop!_OS",
+                            "url": "https://pop.system76.com/",
+                            "desc": "Gaming focused"
+                        },
+                        {
+                            "text": "DistroWatch",
+                            "url": "https://distrowatch.com"
+                        }
+                    ]
+                },
+                {
+                    "id": "linux-software",
+                    "title": "Software",
+                    "links": [
+                        {
+                            "text": "Flatpak / Flathub",
+                            "url": "https://flathub.org"
+                        },
+                        {
+                            "text": "AppImage",
+                            "url": "https://appimage.org/"
+                        },
+                        {
+                            "text": "Snap Store",
+                            "url": "https://snapcraft.io/store"
+                        },
+                        {
+                            "text": "Homebrew",
+                            "url": "https://brew.sh",
+                            "desc": "macOS package manager"
+                        }
+                    ]
+                },
+                {
+                    "id": "linux-gaming",
+                    "title": "Linux Gaming",
+                    "links": [
+                        {
+                            "star": true,
+                            "text": "Proton / Steam Play",
+                            "url": "https://www.protondb.com/"
+                        },
+                        {
+                            "text": "Lutris",
+                            "url": "https://lutris.net"
+                        },
+                        {
+                            "text": "ProtonDB",
+                            "url": "https://protondb.com"
+                        },
+                        {
+                            "text": "Wine",
+                            "url": "https://www.winehq.org/"
+                        },
+                        {
+                            "text": "Heroic Games Launcher",
+                            "url": "https://heroicgameslauncher.com/",
+                            "desc": "Epic/GOG"
+                        }
+                    ]
+                },
+                {
+                    "id": "macos",
+                    "title": "macOS",
+                    "links": [
+                        {
+                            "text": "Homebrew",
+                            "url": "https://brew.sh"
+                        },
+                        {
+                            "text": "MacPorts",
+                            "url": "https://www.macports.org/"
+                        },
+                        {
+                            "text": "Rectangle",
+                            "url": "https://rectangleapp.com/",
+                            "desc": "Window management"
+                        },
+                        {
+                            "text": "AppCleaner",
+                            "url": "https://freemacsoft.net/appcleaner/"
+                        }
+                    ]
+                }
+            ]
+        },
+        "tools-system": {
+            "title": "System Tools",
+            "subtitle": "Tweaks, Automation, Hardware, Virtualization & OS Tools",
+            "icon": "fa-desktop",
+            "sections": [
+                {
+                    "id": "optimization-tweaks",
+                    "title": "Optimization & Tweaks",
+                    "links": [
+                        {
+                            "star": true,
+                            "text": "PowerToys",
+                            "url": "https://github.com/microsoft/PowerToys/",
+                            "desc": "Microsoft system utilities"
+                        },
+                        {
+                            "star": true,
+                            "text": "Windhawk",
+                            "url": "https://windhawk.net/",
+                            "desc": "The UI for customizing Windows"
+                        },
+                        {
+                            "star": true,
+                            "text": "Everything",
+                            "url": "https://www.voidtools.com/",
+                            "desc": "Fastest search for Windows"
+                        },
+                        {
+                            "text": "Winaero Tweaker",
+                            "url": "https://winaerotweaker.com/",
+                            "desc": "All-in-one tuner"
+                        },
+                        {
+                            "text": "Chris Titus WinUtil",
+                            "url": "https://github.com/ChrisTitusTech/winutil",
+                            "desc": "System maintenance script"
+                        },
+                        {
+                            "text": "Open-Shell",
+                            "url": "https://open-shell.github.io/Open-Shell-Menu/",
+                            "desc": "Classic Start Menu"
+                        },
+                        {
+                            "text": "BleachBit",
+                            "url": "https://www.bleachbit.org/",
+                            "desc": "System cleaner"
+                        },
+                        {
+                            "text": "BCUninstaller",
+                            "url": "https://www.bcuninstaller.com/",
+                            "desc": "Bulk Crap Uninstaller"
+                        }
+                    ]
+                },
+                {
+                    "id": "package-managers",
+                    "title": "Package Managers",
+                    "links": [
+                        {
+                            "star": true,
+                            "text": "Winget",
+                            "url": "https://learn.microsoft.com/en-us/windows/package-manager/winget",
+                            "desc": "Windows Package Manager"
+                        },
+                        {
+                            "star": true,
+                            "text": "UniGetUI",
+                            "url": "https://www.marticliment.com/unigetui/",
+                            "desc": "GUI for Winget/Scoop/Choco"
+                        },
+                        {
+                            "text": "Scoop",
+                            "url": "https://scoop.sh/",
+                            "desc": "Command-line installer"
+                        },
+                        {
+                            "text": "Chocolatey",
+                            "url": "https://chocolatey.org/",
+                            "desc": "Software management automation"
+                        }
+                    ]
+                },
+                {
+                    "id": "security-isolation",
+                    "title": "Security & Isolation",
+                    "links": [
+                        {
+                            "star": true,
+                            "text": "Sandboxie-Plus",
+                            "url": "https://sandboxie-plus.com/",
+                            "desc": "Isolated sandbox environment"
+                        },
+                        {
+                            "text": "VirusTotal",
+                            "url": "https://virustotal.com/",
+                            "desc": "Scan files/URLs for malware"
+                        },
+                        {
+                            "text": "Hybrid Analysis",
+                            "url": "https://hybrid-analysis.com/",
+                            "desc": "Online malware analysis"
+                        },
+                        {
+                            "text": "ConfigureDefender",
+                            "url": "https://github.com/AndyFul/ConfigureDefender",
+                            "desc": "Hardened Windows Defender settings"
+                        }
+                    ]
+                },
+                {
+                    "id": "terminal-cli",
+                    "title": "Terminal & CLI",
+                    "links": [
+                        {
+                            "star": true,
+                            "text": "Windows Terminal",
+                            "url": "https://github.com/microsoft/terminal/",
+                            "desc": "Modern terminal app"
+                        },
+                        {
+                            "text": "MobaXterm",
+                            "url": "https://mobaxterm.mobatek.net/",
+                            "desc": "Enhanced terminal for Windows"
+                        },
+                        {
+                            "text": "NuShell",
+                            "url": "https://www.nushell.sh/",
+                            "desc": "A modern shell"
+                        },
+                        {
+                            "text": "Fastfetch",
+                            "url": "https://github.com/fastfetch-cli/fastfetch",
+                            "desc": "System information fetcher"
+                        }
+                    ]
+                },
+                {
+                    "id": "remote-desktop",
+                    "title": "Remote Desktop",
+                    "links": [
+                        {
+                            "star": true,
+                            "text": "Parsec",
+                            "url": "https://parsec.app/",
+                            "desc": "High-performance remote desktop"
+                        },
+                        {
+                            "star": true,
+                            "text": "RustDesk",
+                            "url": "https://rustdesk.com/",
+                            "desc": "Open source alternative to TeamViewer"
+                        },
+                        {
+                            "text": "Sunshine",
+                            "url": "https://app.lizardbyte.dev/Sunshine/",
+                            "desc": "Self-hosted game stream host"
+                        },
+                        {
+                            "text": "Moonlight",
+                            "url": "https://moonlight-stream.org/",
+                            "desc": "Game stream client"
+                        }
+                    ]
+                },
+                {
+                    "id": "virtualization",
+                    "title": "Virtualization",
+                    "links": [
+                        {
+                            "star": true,
+                            "text": "WSL",
+                            "url": "https://learn.microsoft.com/en-us/windows/wsl/",
+                            "desc": "Windows Subsystem for Linux"
+                        },
+                        {
+                            "text": "VMware Workstation Pro",
+                            "url": "https://www.techpowerup.com/download/vmware-workstation-pro/"
+                        },
+                        {
+                            "text": "VirtualBox",
+                            "url": "https://www.virtualbox.org/"
+                        },
+                        {
+                            "text": "Quickemu",
+                            "url": "https://github.com/quickemu-project/quickemu"
+                        }
+                    ]
+                },
+                {
+                    "id": "hardware-tools",
+                    "title": "Hardware Tools",
+                    "links": [
+                        {
+                            "star": true,
+                            "text": "HWiNFO",
+                            "url": "https://www.hwinfo.com/",
+                            "desc": "Comprehensive hardware analysis"
+                        },
+                        {
+                            "star": true,
+                            "text": "FanControl",
+                            "url": "https://getfancontrol.com/",
+                            "desc": "Customizable fan controller"
+                        },
+                        {
+                            "text": "CPU-Z",
+                            "url": "https://www.cpuid.com/softwares/cpu-z.html"
+                        },
+                        {
+                            "text": "GPU-Z",
+                            "url": "https://www.techpowerup.com/download/techpowerup-gpu-z/"
+                        },
+                        {
+                            "text": "DDU",
+                            "url": "https://www.wagnardsoft.com/display-driver-uninstaller-ddu-",
+                            "desc": "Display Driver Uninstaller"
+                        },
+                        {
+                            "text": "TrafficMonitor",
+                            "url": "https://github.com/zhongyang219/TrafficMonitor/"
+                        }
+                    ]
+                },
+                {
+                    "id": "disk-display-audio",
+                    "title": "Disk, Display & Audio",
+                    "links": [
+                        {
+                            "star": true,
+                            "text": "CrystalDiskMark",
+                            "url": "https://crystalmark.info/en/software/crystaldiskmark/",
+                            "desc": "Disk benchmark"
+                        },
+                        {
+                            "text": "f.lux",
+                            "url": "https://justgetflux.com/",
+                            "desc": "Blue light filter"
+                        },
+                        {
+                            "text": "Twinkle Tray",
+                            "url": "https://twinkletray.com/",
+                            "desc": "Brightness control"
+                        },
+                        {
+                            "text": "Equalizer APO",
+                            "url": "https://sourceforge.net/projects/equalizerapo/",
+                            "desc": "System-wide equalizer"
+                        },
+                        {
+                            "text": "TreeSize",
+                            "url": "https://www.jam-software.com/treesize",
+                            "desc": "Disk space analyzer"
+                        }
+                    ]
+                },
+                {
+                    "id": "isos-boot-activation",
+                    "title": "ISOs, Boot & Activation",
+                    "links": [
+                        {
+                            "star": true,
+                            "text": "Massgrave (MAS)",
+                            "url": "https://massgrave.dev/",
+                            "desc": "Windows/Office activation"
+                        },
+                        {
+                            "star": true,
+                            "text": "Massgrave ISOs",
+                            "url": "https://massgrave.dev/genuine-installation-media",
+                            "desc": "Genuine Windows media"
+                        },
+                        {
+                            "star": true,
+                            "text": "Rufus",
+                            "url": "https://rufus.ie/",
+                            "desc": "Create bootable USB drives"
+                        },
+                        {
+                            "text": "Legacy Update",
+                            "url": "https://legacyupdate.net/",
+                            "desc": "Update older Windows versions"
+                        }
+                    ]
+                },
+                {
+                    "id": "customization",
+                    "title": "Customization & Wallpapers",
+                    "links": [
+                        {
+                            "star": true,
+                            "text": "Rainmeter",
+                            "url": "https://www.rainmeter.net/",
+                            "desc": "Desktop skinning engine"
+                        },
+                        {
+                            "star": true,
+                            "text": "Wallhaven",
+                            "url": "https://wallhaven.cc/",
+                            "desc": "Best wallpaper site"
+                        },
+                        {
+                            "text": "Lively Wallpaper",
+                            "url": "https://www.rocksdanister.com/lively/",
+                            "desc": "Live backgrounds"
+                        },
+                        {
+                            "text": "ExplorerPatcher",
+                            "url": "https://github.com/valinet/ExplorerPatcher"
+                        },
+                        {
+                            "text": "TranslucentTB",
+                            "url": "https://github.com/TranslucentTB/TranslucentTB"
+                        }
+                    ]
+                }
+            ]
+        },
+        "tools-file": {
+            "title": "File Tools",
+            "subtitle": "Conversion, Editors, Sharing",
+            "icon": "fa-file",
+            "sections": [
+                {
+                    "id": "conversion",
+                    "title": "Conversion",
+                    "links": [
+                        {
+                            "star": true,
+                            "text": "FFmpeg",
+                            "url": "https://ffmpeg.org/",
+                            "desc": "Video/audio conversion"
+                        },
+                        {
+                            "star": true,
+                            "text": "HandBrake",
+                            "url": "https://handbrake.fr",
+                            "desc": "Video transcoding"
+                        },
+                        {
+                            "text": "CloudConvert",
+                            "url": "https://cloudconvert.com"
+                        },
+                        {
+                            "text": "Convertio",
+                            "url": "https://convertio.co"
+                        },
+                        {
+                            "text": "ImageMagick",
+                            "url": "https://imagemagick.org/"
+                        }
+                    ]
+                },
+                {
+                    "id": "pdf",
+                    "title": "PDF Tools",
+                    "links": [
+                        {
+                            "star": true,
+                            "text": "Stirling PDF",
+                            "url": "https://github.com/Stirling-Tools/Stirling-PDF",
+                            "desc": "Self-hosted PDF toolkit"
+                        },
+                        {
+                            "text": "PDF24",
+                            "url": "https://tools.pdf24.org/"
+                        },
+                        {
+                            "text": "Smallpdf",
+                            "url": "https://smallpdf.com/"
+                        },
+                        {
+                            "text": "iLovePDF",
+                            "url": "https://www.ilovepdf.com/"
+                        }
+                    ]
+                },
+                {
+                    "id": "sharing",
+                    "title": "File Sharing",
+                    "links": [
+                        {
+                            "text": "Send (Firefox)",
+                            "url": "https://send.vis.ee/",
+                            "desc": "Encrypted file sharing"
+                        },
+                        {
+                            "text": "WeTransfer",
+                            "url": "https://wetransfer.com/"
+                        },
+                        {
+                            "text": "Gofile",
+                            "url": "https://gofile.io/"
+                        },
+                        {
+                            "text": "Catbox",
+                            "url": "https://catbox.moe/"
+                        }
+                    ]
+                }
+            ]
+        },
+        "tools-internet": {
+            "title": "Internet Tools",
+            "subtitle": "Browsers, Extensions, Anti-Censorship",
+            "icon": "fa-globe",
+            "sections": [
+                {
+                    "id": "browsers",
+                    "title": "Privacy Browsers",
+                    "links": [
+                        {
+                            "star": true,
+                            "text": "Mullvad Browser",
+                            "url": "https://mullvad.net/en/browser"
+                        },
+                        {
+                            "star": true,
+                            "text": "LibreWolf",
+                            "url": "https://librewolf.net/"
+                        },
+                        {
+                            "text": "Brave Browser",
+                            "url": "https://brave.com/"
+                        },
+                        {
+                            "text": "Tor Browser",
+                            "url": "https://torproject.org/"
+                        },
+                        {
+                            "text": "Waterfox",
+                            "url": "https://waterfox.net/"
+                        },
+                        {
+                            "text": "Zen Browser",
+                            "url": "https://zen-browser.app/"
+                        }
+                    ]
+                },
+                {
+                    "id": "anti-censorship",
+                    "title": "Anti-Censorship / Bypass DPI",
+                    "links": [
+                        {
+                            "star": true,
+                            "text": "GoodbyeDPI",
+                            "url": "https://github.com/ValdikSS/GoodbyeDPI/",
+                            "desc": "Passive DPI circumvention"
+                        },
+                        {
+                            "text": "Zapret",
+                            "url": "https://github.com/bol-van/zapret"
+                        },
+                        {
+                            "text": "SpoofDPI",
+                            "url": "https://github.com/xvzc/SpoofDPI"
+                        },
+                        {
+                            "text": "PowerTunnel",
+                            "url": "https://github.com/krlvm/PowerTunnel"
+                        },
+                        {
+                            "text": "GreenTunnel",
+                            "url": "https://github.com/SadeghHayeri/GreenTunnel"
+                        }
+                    ]
+                },
+                {
+                    "id": "search-engines",
+                    "title": "Search Engines",
+                    "links": [
+                        {
+                            "star": true,
+                            "text": "SearXNG",
+                            "url": "https://searx.space/"
+                        },
+                        {
+                            "text": "Brave Search",
+                            "url": "https://search.brave.com/"
+                        },
+                        {
+                            "text": "DuckDuckGo",
+                            "url": "https://duckduckgo.com/"
+                        },
+                        {
+                            "text": "Mojeek",
+                            "url": "https://www.mojeek.com/"
+                        },
+                        {
+                            "text": "Startpage",
+                            "url": "https://www.startpage.com/"
+                        },
+                        {
+                            "text": "4get",
+                            "url": "https://4get.ca/"
+                        }
+                    ]
+                },
+                {
+                    "id": "extensions",
+                    "title": "Extensions",
+                    "links": [
+                        {
+                            "star": true,
+                            "text": "uBlock Origin",
+                            "url": "https://github.com/gorhill/uBlock"
+                        },
+                        {
+                            "text": "Bitwarden",
+                            "url": "https://bitwarden.com/",
+                            "desc": "Password manager"
+                        },
+                        {
+                            "text": "Dark Reader",
+                            "url": "https://darkreader.org/"
+                        },
+                        {
+                            "text": "Tampermonkey",
+                            "url": "https://www.tampermonkey.net/",
+                            "desc": "Userscripts"
+                        },
+                        {
+                            "text": "SponsorBlock",
+                            "url": "https://sponsor.ajay.app/"
+                        },
+                        {
+                            "text": "Return YouTube Dislike",
+                            "url": "https://returnyoutubedislike.com/"
+                        }
+                    ]
+                },
+                {
+                    "id": "networking",
+                    "title": "Networking",
+                    "links": [
+                        {
+                            "text": "Wireshark",
+                            "url": "https://www.wireshark.org/"
+                        },
+                        {
+                            "text": "Fast.com",
+                            "url": "https://fast.com",
+                            "desc": "Speed test"
+                        },
+                        {
+                            "text": "DNS Leak Test",
+                            "url": "https://dnsleaktest.com/"
+                        }
+                    ]
+                }
+            ]
+        },
+        "tools-social": {
+            "title": "Social Media Tools",
+            "subtitle": "Downloaders, Alternatives, Managers",
+            "icon": "fa-comments",
+            "sections": [
+                {
+                    "id": "downloaders",
+                    "title": "Downloaders",
+                    "links": [
+                        {
+                            "star": true,
+                            "text": "yt-dlp",
+                            "url": "https://github.com/yt-dlp/yt-dlp"
+                        },
+                        {
+                            "text": "Cobalt",
+                            "url": "https://cobalt.tools/",
+                            "desc": "Web-based downloader"
+                        },
+                        {
+                            "text": "Gallery-DL",
+                            "url": "https://github.com/mikf/gallery-dl",
+                            "desc": "Image boards"
+                        },
+                        {
+                            "text": "Instaloader",
+                            "url": "https://instaloader.github.io/",
+                            "desc": "Instagram"
+                        }
+                    ]
+                },
+                {
+                    "id": "reddit",
+                    "title": "Reddit",
+                    "links": [
+                        {
+                            "text": "Old Reddit Redirect",
+                            "url": "https://github.com/tom-james-watson/old-reddit-redirect"
+                        },
+                        {
+                            "text": "Reddit Enhancement Suite",
+                            "url": "https://redditenhancementsuite.com/"
+                        },
+                        {
+                            "text": "Teddit/Libreddit",
+                            "url": "https://github.com/redlib-org/redlib",
+                            "desc": "Privacy frontends"
+                        }
+                    ]
+                },
+                {
+                    "id": "youtube",
+                    "title": "YouTube",
+                    "links": [
+                        {
+                            "star": true,
+                            "text": "FreeTube",
+                            "url": "https://freetubeapp.io/",
+                            "desc": "Private YT client"
+                        },
+                        {
+                            "text": "Invidious",
+                            "url": "https://invidious.io/",
+                            "desc": "Web frontend"
+                        },
+                        {
+                            "text": "NewPipe",
+                            "url": "https://newpipe.net/",
+                            "desc": "Android"
+                        },
+                        {
+                            "text": "Piped",
+                            "url": "https://piped.video/"
+                        }
+                    ]
+                },
+                {
+                    "id": "twitter",
+                    "title": "Twitter / X",
+                    "links": [
+                        {
+                            "text": "Nitter",
+                            "url": "https://github.com/zedeus/nitter",
+                            "desc": "Privacy frontend"
+                        },
+                        {
+                            "text": "Control Panel for Twitter",
+                            "url": "https://github.com/insin/control-panel-for-twitter"
+                        }
+                    ]
+                }
+            ]
+        },
+        "tools-text": {
+            "title": "Text Tools",
+            "subtitle": "Editors, Notes, Writing, Translation",
+            "icon": "fa-font",
+            "sections": [
+                {
+                    "id": "editors",
+                    "title": "Text Editors",
+                    "links": [
+                        {
+                            "star": true,
+                            "text": "VS Code",
+                            "url": "https://code.visualstudio.com"
+                        },
+                        {
+                            "star": true,
+                            "text": "Notepad++",
+                            "url": "https://notepad-plus-plus.org"
+                        },
+                        {
+                            "text": "Sublime Text",
+                            "url": "https://www.sublimetext.com/"
+                        },
+                        {
+                            "text": "Neovim",
+                            "url": "https://neovim.io/"
+                        }
+                    ]
+                },
+                {
+                    "id": "notes",
+                    "title": "Note Taking",
+                    "links": [
+                        {
+                            "star": true,
+                            "text": "Obsidian",
+                            "url": "https://obsidian.md"
+                        },
+                        {
+                            "text": "Notion",
+                            "url": "https://notion.so"
+                        },
+                        {
+                            "text": "Logseq",
+                            "url": "https://logseq.com/",
+                            "desc": "Open source"
+                        },
+                        {
+                            "text": "Joplin",
+                            "url": "https://joplinapp.org/",
+                            "desc": "Open source"
+                        }
+                    ]
+                },
+                {
+                    "id": "writing",
+                    "title": "Writing",
+                    "links": [
+                        {
+                            "text": "Grammarly",
+                            "url": "https://www.grammarly.com/"
+                        },
+                        {
+                            "text": "LanguageTool",
+                            "url": "https://languagetool.org/",
+                            "desc": "Open source"
+                        },
+                        {
+                            "text": "Hemingway Editor",
+                            "url": "https://hemingwayapp.com/"
+                        }
+                    ]
+                },
+                {
+                    "id": "translation",
+                    "title": "Translation",
+                    "links": [
+                        {
+                            "star": true,
+                            "text": "DeepL",
+                            "url": "https://deepl.com"
+                        },
+                        {
+                            "text": "Google Translate",
+                            "url": "https://translate.google.com"
+                        },
+                        {
+                            "text": "LibreTranslate",
+                            "url": "https://libretranslate.com/",
+                            "desc": "Self-hostable"
+                        }
+                    ]
+                }
+            ]
+        },
+        "misc": {
+            "title": "Miscellaneous",
+            "subtitle": "Random useful stuff",
+            "icon": "fa-folder",
+            "sections": [
+                {
+                    "id": "misc-resources",
+                    "title": "Useful Resources",
+                    "links": [
+                        {
+                            "text": "Awesome Lists",
+                            "url": "https://github.com/sindresorhus/awesome"
+                        },
+                        {
+                            "text": "AlternativeTo",
+                            "url": "https://alternativeto.net"
+                        },
+                        {
+                            "text": "Product Hunt",
+                            "url": "https://www.producthunt.com/"
+                        },
+                        {
+                            "text": "Hacker News",
+                            "url": "https://news.ycombinator.com"
+                        }
+                    ]
+                },
+                {
+                    "id": "learning",
+                    "title": "Learning",
+                    "links": [
+                        {
+                            "text": "Khan Academy",
+                            "url": "https://khanacademy.org"
+                        },
+                        {
+                            "text": "Coursera",
+                            "url": "https://www.coursera.org/"
+                        },
+                        {
+                            "text": "freeCodeCamp",
+                            "url": "https://freecodecamp.org"
+                        },
+                        {
+                            "text": "The Odin Project",
+                            "url": "https://www.theodinproject.com/"
+                        }
+                    ]
+                }
+            ]
+        },
+        "vpn-proxy": {
+            "title": "VPNs & Proxies",
+            "subtitle": "Circumvent censorship and hide your IP.",
+            "icon": "fa-mask",
+            "sections": [
+                {
+                    "id": "proxies",
+                    "title": "Proxy Clients & Servers",
+                    "links": [
+                        {
+                            "star": true,
+                            "text": "v2rayN",
+                            "url": "https://github.com/2dust/v2rayN"
+                        },
+                        {
+                            "text": "NekoBox",
+                            "url": "https://github.com/MatsuriDayo/NekoBoxForAndroid/"
+                        },
+                        {
+                            "text": "Sing-box",
+                            "url": "https://sing-box.sagernet.org/"
+                        },
+                        {
+                            "text": "Hiddify",
+                            "url": "https://hiddify.com/"
+                        },
+                        {
+                            "text": "Outline VPN",
+                            "url": "https://getoutline.org/"
+                        },
+                        {
+                            "text": "Psiphon",
+                            "url": "https://psiphon.ca/"
+                        },
+                        {
+                            "text": "Lantern",
+                            "url": "https://lantern.io/"
+                        }
+                    ]
+                }
+            ]
+        }
+    },
+    "sidebar": [
+        {
+            "group": "Main",
+            "items": [
+                {
+                    "id": "home",
+                    "label": "Home",
+                    "icon": "fa-house"
+                },
+                {
+                    "id": "posts",
+                    "label": "Posts",
+                    "icon": "fa-newspaper"
+                },
+                {
+                    "id": "contribute",
+                    "label": "Contribute",
+                    "icon": "fa-code-branch"
+                }
+            ]
+        },
+        {
+            "group": "Wiki",
+            "items": [
+                {
+                    "id": "adblocking",
+                    "label": "Adblocking / Privacy",
+                    "icon": "fa-shield-halved"
+                },
+                {
+                    "id": "ai",
+                    "label": "Artificial Intelligence",
+                    "icon": "fa-robot"
+                },
+                {
+                    "id": "movies",
+                    "label": "Movies / TV / Anime",
+                    "icon": "fa-film"
+                },
+                {
+                    "id": "music",
+                    "label": "Music / Podcasts",
+                    "icon": "fa-music"
+                },
+                {
+                    "id": "gaming",
+                    "label": "Gaming / Emulation",
+                    "icon": "fa-gamepad"
+                },
+                {
+                    "id": "reading",
+                    "label": "Books / Comics / Manga",
+                    "icon": "fa-book-open"
+                },
+                {
+                    "id": "downloading",
+                    "label": "Downloading",
+                    "icon": "fa-download"
+                },
+                {
+                    "id": "torrenting",
+                    "label": "Torrenting",
+                    "icon": "fa-magnet"
+                },
+                {
+                    "id": "android",
+                    "label": "Android / iOS",
+                    "icon": "fa-mobile-screen"
+                },
+                {
+                    "id": "linux",
+                    "label": "Linux / macOS",
+                    "icon": "fa-terminal"
+                },
+                {
+                    "id": "misc",
+                    "label": "Miscellaneous",
+                    "icon": "fa-folder"
+                }
+            ]
+        },
+        {
+            "group": "Tools",
+            "items": [
+                {
+                    "id": "tools-system",
+                    "label": "System Tools",
+                    "icon": "fa-desktop"
+                },
+                {
+                    "id": "tools-file",
+                    "label": "File Tools",
+                    "icon": "fa-file"
+                },
+                {
+                    "id": "tools-internet",
+                    "label": "Internet Tools",
+                    "icon": "fa-globe"
+                },
+                {
+                    "id": "tools-social",
+                    "label": "Social Media Tools",
+                    "icon": "fa-comments"
+                },
+                {
+                    "id": "tools-text",
+                    "label": "Text Tools",
+                    "icon": "fa-font"
+                },
+                {
+                    "id": "vpn-proxy",
+                    "label": "VPNs & Proxies",
+                    "icon": "fa-mask"
+                }
+            ]
+        }
+    ]
+}
