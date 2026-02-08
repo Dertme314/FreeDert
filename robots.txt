@@ -2,4 +2,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://fdert.vercel.app/sitemap.xml
+Sitemap: https://fdert.vercel.app
