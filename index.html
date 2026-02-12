@@ -316,46 +316,86 @@
             text-decoration: none;
         }
 
-        .tip-box {
-            background: var(--tip-bg);
-            border: 1px solid var(--border);
-            border-left: 3px solid var(--tip-border);
-            border-radius: 6px;
-            padding: 1rem 1.25rem;
-            margin-bottom: 1.5rem;
-            font-size: 0.9rem;
-            color: var(--text-secondary);
-        }
-
-        .tip-label {
-            color: var(--tip-text);
-            font-weight: 600;
-            margin-bottom: 0.5rem;
+        .section-header {
             display: flex;
             align-items: center;
-            gap: 0.4rem;
+            gap: 0.5rem;
         }
 
-        .tip-box u {
-            color: var(--text-primary);
-            text-decoration-color: var(--tip-text);
+        .section-link-icon {
+            font-size: 0.8rem;
+            color: var(--text-muted);
+            opacity: 0;
+            cursor: pointer;
+            transition: opacity 0.2s;
         }
 
-        .link-list {
-            list-style: disc;
-            padding-left: 1.25rem;
-            margin-bottom: 1.5rem;
+        .section-header:hover .section-link-icon {
+            opacity: 1;
         }
 
-        .link-list li {
-            margin-bottom: 0.6rem;
+        .section-link-icon:hover {
+            color: var(--text-link);
+        }
+
+        .scroll-to-top {
+            position: fixed;
+            bottom: 2rem;
+            right: 2rem;
+            background: var(--bg-card);
+            border: 1px solid var(--border);
             color: var(--text-secondary);
-            font-size: 0.95rem;
-            line-height: 1.5;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            opacity: 0;
+            visibility: hidden;
+            transition: all 0.3s;
+            z-index: 100;
+        }
+
+        .scroll-to-top.show {
+            opacity: 1;
+            visibility: visible;
+        }
+
+        .scroll-to-top:hover {
+            background: var(--bg-hover);
+            color: var(--text-primary);
+            border-color: var(--border-hover);
+            transform: translateY(-2px);
+        }
+
+        html {
+            scroll-behavior: smooth;
         }
 
         .link-list li a {
             color: var(--text-link);
+        }
+
+        .search-section-result {
+            margin-top: 2rem;
+            padding: 1rem;
+            background: var(--bg-card);
+            border-radius: 8px;
+            border: 1px solid var(--border);
+        }
+
+        .search-result-meta {
+            font-size: 0.75rem;
+            color: var(--text-muted);
+            text-transform: uppercase;
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+        }
+
+        .search-result-meta a {
+            color: inherit;
         }
 
         .toc-sidebar {
@@ -572,6 +612,10 @@
             </nav>
         </div>
     </div>
+
+    <button class="scroll-to-top" title="Back to top">
+        <i class="fa-solid fa-arrow-up"></i>
+    </button>
     <div id="feedback-modal" class="modal">
         <div class="modal-content">
             <span class="close-modal">&times;</span>
@@ -591,6 +635,28 @@
     <script>
         let siteData = null;
         let currentCategory = 'home';
+        let searchActive = false;
+        let searchResults = [];
+
+        // Scroll to top button logic
+        document.addEventListener('DOMContentLoaded', () => {
+            const scrollBtn = document.querySelector('.scroll-to-top');
+            const scrollContent = document.querySelector('.content-scroll');
+
+            if (scrollContent && scrollBtn) {
+                scrollContent.addEventListener('scroll', () => {
+                    if (scrollContent.scrollTop > 500) {
+                        scrollBtn.classList.add('show');
+                    } else {
+                        scrollBtn.classList.remove('show');
+                    }
+                });
+
+                scrollBtn.addEventListener('click', () => {
+                    scrollContent.scrollTo({ top: 0, behavior: 'smooth' });
+                });
+            }
+        });
 
         document.addEventListener('DOMContentLoaded', async () => {
             await loadData();
@@ -675,6 +741,7 @@
         function renderContent(categoryId) {
             if (!siteData || !siteData.categories[categoryId]) return;
 
+            searchActive = false;
             const cat = siteData.categories[categoryId];
             const container = document.querySelector('.content-container');
 
@@ -693,7 +760,11 @@
     `;
 
             cat.sections.forEach(section => {
-                html += `<h2 id="${section.id}">${section.title}</h2>`;
+                html += `
+                    <h2 id="${section.id}" class="section-header">
+                        ${section.title}
+                        <i class="fa-solid fa-link section-link-icon" title="Copy section link" data-id="${section.id}"></i>
+                    </h2>`;
 
                 if (section.tip) {
                     html += `
@@ -715,7 +786,81 @@
 
             container.innerHTML = html;
 
+            // Add click listeners for copy icons
+            container.querySelectorAll('.section-link-icon').forEach(icon => {
+                icon.addEventListener('click', (e) => {
+                    const id = e.target.dataset.id;
+                    const url = `${window.location.origin}${window.location.pathname}#${id}`;
+                    navigator.clipboard.writeText(url).then(() => {
+                        const originalClass = e.target.className;
+                        e.target.className = 'fa-solid fa-check section-link-icon';
+                        e.target.style.color = 'var(--tip-text)';
+                        setTimeout(() => {
+                            e.target.className = originalClass;
+                            e.target.style.color = '';
+                        }, 2000);
+                    });
+                });
+            });
+
             renderTOC(cat.sections);
+        }
+
+        function renderSearchResults(query) {
+            searchActive = true;
+            const container = document.querySelector('.content-container');
+            const toc = document.querySelector('.toc-sidebar');
+            toc.innerHTML = ''; // Clear TOC for search results
+
+            let results = [];
+
+            // Search through all categories
+            Object.keys(siteData.categories).forEach(catId => {
+                const cat = siteData.categories[catId];
+                cat.sections.forEach(section => {
+                    const matchedLinks = section.links.filter(link =>
+                        link.text.toLowerCase().includes(query) ||
+                        (link.desc && link.desc.toLowerCase().includes(query))
+                    );
+
+                    if (matchedLinks.length > 0) {
+                        results.push({
+                            catId,
+                            catTitle: cat.title,
+                            secId: section.id,
+                            secTitle: section.title,
+                            links: matchedLinks
+                        });
+                    }
+                });
+            });
+
+            if (results.length === 0) {
+                container.innerHTML = `<h1>Search Results</h1><p class="subtitle">No results found for "${query}"</p>`;
+                return;
+            }
+
+            let html = `<h1>Search Results</h1><p class="subtitle">Found ${results.reduce((acc, r) => acc + r.links.length, 0)} links for "${query}"</p>`;
+
+            results.forEach(res => {
+                html += `
+                    <div class="search-section-result">
+                        <div class="search-result-meta">
+                            <a href="#${res.catId}">${res.catTitle}</a> › ${res.secTitle}
+                        </div>
+                        <ul class="link-list" style="margin-bottom: 0;">
+                `;
+
+                res.links.forEach(link => {
+                    const star = link.star ? '⭐ ' : '';
+                    const desc = link.desc ? ` - ${link.desc}` : '';
+                    html += `<li>${star}<a href="${link.url}" target="_blank" rel="noopener">${link.text}</a>${desc}</li>`;
+                });
+
+                html += '</ul></div>';
+            });
+
+            container.innerHTML = html;
         }
 
         function renderTOC(sections) {
@@ -732,24 +877,42 @@
         }
 
         function initTOCHighlight() {
-            const headings = document.querySelectorAll('h2[id]');
+            const headings = Array.from(document.querySelectorAll('h2[id]'));
             const tocLinks = document.querySelectorAll('.toc-link');
+            const scrollContainer = document.querySelector('.content-scroll');
 
             if (headings.length === 0 || tocLinks.length === 0) return;
 
             const observer = new IntersectionObserver((entries) => {
+                if (searchActive) return;
+
                 entries.forEach(entry => {
                     if (entry.isIntersecting) {
                         const id = entry.target.getAttribute('id');
-                        if (!id) return;
                         tocLinks.forEach(link => link.classList.remove('active'));
                         const activeLink = document.querySelector(`.toc-link[href="#${id}"]`);
                         if (activeLink) activeLink.classList.add('active');
                     }
                 });
-            }, { rootMargin: '-10% 0px -70% 0px', threshold: 0 });
+            }, {
+                root: scrollContainer,
+                rootMargin: '-10% 0px -80% 0px',
+                threshold: 0
+            });
 
             headings.forEach(h => observer.observe(h));
+
+            // Special handling for the bottom of the page to highlight the last section
+            scrollContainer.addEventListener('scroll', () => {
+                if (searchActive) return;
+
+                const isBottom = Math.abs(scrollContainer.scrollHeight - scrollContainer.scrollTop - scrollContainer.clientHeight) < 2;
+                if (isBottom) {
+                    tocLinks.forEach(link => link.classList.remove('active'));
+                    const lastLink = tocLinks[tocLinks.length - 1];
+                    if (lastLink) lastLink.classList.add('active');
+                }
+            });
         }
 
         function initSearch() {
@@ -763,23 +926,13 @@
             });
 
             searchInput.addEventListener('input', (e) => {
-                const query = e.target.value.toLowerCase();
-                const listItems = document.querySelectorAll('.link-list li');
-                const navItems = document.querySelectorAll('.nav-item');
+                const query = e.target.value.toLowerCase().trim();
 
-                listItems.forEach(item => {
-                    const text = item.textContent.toLowerCase();
-                    item.style.display = (query === '' || text.includes(query)) ? '' : 'none';
-                });
-
-                navItems.forEach(item => {
-                    const text = item.textContent.toLowerCase();
-                    if (query === '' || text.includes(query)) {
-                        item.style.opacity = '1';
-                    } else {
-                        item.style.opacity = '0.4';
-                    }
-                });
+                if (query.length > 1) {
+                    renderSearchResults(query);
+                } else if (query.length === 0) {
+                    renderContent(currentCategory);
+                }
             });
         }
 
