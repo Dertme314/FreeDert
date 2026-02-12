@@ -594,11 +594,30 @@
 
         document.addEventListener('DOMContentLoaded', async () => {
             await loadData();
+
+            // Check for hash on load
+            if (window.location.hash) {
+                const hash = window.location.hash.slice(1);
+                if (siteData.categories[hash]) {
+                    currentCategory = hash;
+                }
+            }
+
             renderSidebar();
             renderContent(currentCategory);
             initSearch();
             initThemeToggle();
             initFeedbackModal();
+
+            // Listen for hash changes
+            window.addEventListener('hashchange', () => {
+                const hash = window.location.hash.slice(1);
+                if (siteData.categories[hash] && hash !== currentCategory) {
+                    currentCategory = hash;
+                    renderContent(hash);
+                    updateActiveNav(hash);
+                }
+            });
         });
 
         async function loadData() {
@@ -633,9 +652,7 @@
                     link.addEventListener('click', (e) => {
                         e.preventDefault();
                         if (siteData.categories[item.id]) {
-                            currentCategory = item.id;
-                            renderContent(item.id);
-                            updateActiveNav(item.id);
+                            window.location.hash = item.id;
                         }
                     });
 
